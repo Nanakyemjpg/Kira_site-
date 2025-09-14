@@ -1,0 +1,15 @@
+!DOCTYPE html>
+<html>
+<head><title>Chat with Kira</title></head>
+<body>
+    <h2>Chat with Kira 🤖</h2>
+    <form method="post">
+        <input type="text" name="message" placeholder="Say something...">
+        <button type="submit">Send</button>
+    </form>
+
+    {% if reply %}
+        <p><b>{{ reply }}</b></p>
+    {% endif %}
+</body>
+</html>
