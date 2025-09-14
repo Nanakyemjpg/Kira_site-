@@ -7,3 +7,13 @@
         <input type="file" name="file">
         <button type="submit">Upload</button>
     </form>
+  <h3>Your Content</h3>
+    <ul>
+        {% for file in uploads %}
+            <li><a href="/static/uploads/{{ file }}">{{ file }}</a></li>
+        {% endfor %}
+    </ul>
+
+    <p><a href="/chat">Chat with Kira 🤖</a></p>
+</body>
+</html>
